@@ -1,0 +1,200 @@
+.main-container{
+    width:100%;
+    height:100%;
+    font-size:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 321px) {
+  .main-container {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 322px) and (max-width: 400px) {
+  .main-container {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .main-container {
+    font-size: 12px;
+  }
+}
+.con-con{
+    width:100%;
+}
+.main-nav{
+    width:100%;
+    line-height: 36px;
+}
+.main-nav ul{
+    width:100%;
+    height:36px;
+    display:flex;
+    border:0.5px solid #eee;
+}
+.main-nav ul li{
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main-list{
+    width:100%;
+    height:150px;
+}
+.banner{
+    width:100%;
+}
+.bannerimg{
+    width:100%;
+    height:150px;
+}
+.swiper-item{
+    width:100%;
+    height:100%;
+}
+.bannerimg{
+    height:100%;
+    width:100%;
+}
+.navTit{
+    width:100%;
+    height:75px;
+    display:flex;
+}
+.navbox{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    text-justify: center;
+    align-items: center;
+    padding:5px 0;
+    height:100%;
+}
+.imgbox{
+    flex:2;
+}
+.navimg{
+    width:40px;
+    height:40px;
+}
+.navtext{
+    width:100%;
+    padding-bottom:5px;
+    flex:1;
+    text-align:center;
+}
+.oneyuan{
+    width:100%;
+    height:110px;
+    background:#eee;
+    padding-top:10px;
+}
+.oneyuanimg{
+    width:100%;
+    height:100%;
+}
+.lowprice{
+    width:100%;
+    height:55px;
+    background:#eee;
+}
+.lowpriceimg{
+    width:100%;
+    height:100%;
+}
+.huichang{
+    width:100%;
+    height:250px;
+    display:flex;
+}
+.huileft{
+    flex:1;
+    width:100%;
+    height:100%;
+}
+.huileft image{
+    width:100%;
+    height:100%;
+}
+.huiright{
+    flex:1;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.huiright image{
+    flex:1;
+    width:100%;
+    height:100%;
+}
+.threcolumn{
+    width:100%;
+    height:160px;
+    display:flex;
+}
+.threcolumn image{
+    flex:1;
+    width:100%;
+    height:100%;
+}
+.biqiang{
+    width:100%;
+    height:115px;
+}
+.biqiang image{
+    width:100%;
+    height:100%;
+}
+.prolist{
+    width:100%;
+}
+.prolist ul{
+    box-sizing: border-box;
+    height:100%;
+    display: flex;
+    padding:4px 4px 4px 0;
+    flex-wrap: wrap;
+}
+.prolist ul navigator{
+    color:#999;
+    box-sizing: border-box;
+    width:50%;
+    padding-left:4px;
+}
+.prolist ul li image{
+    height:160px;
+    width:100%;
+}
+.prolist .protext{
+    width:100%;
+    display: flex;
+    height:20px;
+    line-height: 20px;
+}
+.prolist  i{
+    display:block;
+    flex:1;
+    color:pink;
+}
+.prolist  span{
+    display:block;
+    flex:1;
+    text-align: right;
+}
+.prolist b{
+    display: block;
+    height:20px;
+    line-height: 20px;
+}
+.main-container scroll-view button {
+  font-size: 14px;
+  border: 0;
+}

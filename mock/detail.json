@@ -1,0 +1,22 @@
+{
+  "title": "abc",
+  "content": "<view class=\"title\">
+   高贵典雅气质百搭显瘦纯色方领中长款羊毛呢大衣
+  </view>
+  <image src=\"/imagesdetail01.jpg\"></image>
+  <text class=\"body\">
+  卷皮折扣 > 品牌折扣 > 女装 > 单排扣修身羊毛呢大衣
+  </text>
+  <image src=\"/images/detail02.jpg\"></image>
+  <text class=\"body\">
+  细节展示
+  </text>
+  <image src=\"/images/detail03.jpg\"></image>
+  <text class=\"body\">
+  细节展示
+  </text>
+  <image src=\"/images/detail04.jpg\"></image>
+  <text class=\"body\">
+  细节展示
+  </text>"
+}

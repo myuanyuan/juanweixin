@@ -1,0 +1,5 @@
+<import src="../tpls/actionsheet.wxml"/>
+<import src="../tpls/modal.wxml"/>
+<template is="actionsheet" data="{{...actionSheet}}"></template>
+<template is="modal" data="{{...modal}}"></template>
+<view>我的账户信息。。。</view>

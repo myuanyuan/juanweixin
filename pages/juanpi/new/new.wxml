@@ -1,0 +1,104 @@
+<view class="main-container">
+    <scroll-view class="con-con" wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{scrollTop}}">
+      <view hidden="{{refreshHidden}}">
+        <button plain="{{true}}" loading="{{true}}">努力刷新中...</button>
+      </view>
+    <!--<view class="con-con">-->
+        <nav class="main-nav">
+            <ul>
+                <li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">上新</li>
+                <li class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">女装</li>
+                <li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">童装</li>
+                <li class="{{current == 3 ? 'active' : ''}}" catchtap="switchSlider" data-index="3">鞋包</li>
+                <li class="{{current == 4 ? 'active' : ''}}" catchtap="switchSlider" data-index="4">美妆</li>
+                <li class="{{current == 5 ? 'active' : ''}}" catchtap="switchSlider" data-index="5">美食</li>
+            </ul>
+        </nav>
+        <view class="list-loading">
+            <loading hidden="{{loadingHidden}}">努力加载中...</loading>
+        </view>
+        <swiper class="main-list" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" current="{{current}}">
+            <block class="banner" wx:for="{{bannerSrc}}">
+            <swiper-item>
+                <image class="bannerimg" src="{{item}}"/>
+            </swiper-item>
+            </block>
+        </swiper>
+        <view class="navTit">
+            <view class="navbox"  wx:for="{{navItem}}" wx:for-item="item">
+                <view class="imgbox">
+                    <image class="navimg" src="{{item.navSrc}}"/>
+                </view>
+                <view class="navtext">{{item.navText}}</view>
+            </view>
+        </view>
+        <view class="oneyuan">
+            <image class="oneyuanimg" src="{{oneyuanimg}}"/>
+        </view>
+        <view class="lowprice">
+            <image class="lowpriceimg" src="{{lowpriceimg}}"/>
+        </view>
+        <view class="huichang">
+            <view class="huileft">
+            <image src="{{huileftimg}}"></image>
+            </view>
+            <view class="huiright">
+            <image src="{{huirtimg}}"></image>
+            <image src="{{huirbimg}}"></image>
+            </view>
+        </view>
+        <view class="threcolumn">
+            <image src="//s2.juancdn.com/bao/161009/6/5/57f9b5de151ad1f65e8b4567_250x290.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"/>
+            <image src="//s2.juancdn.com/bao/161009/a/6/57f9b5e7151ad1a8468b45f1_250x290.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"/>
+            <image src="//s2.juancdn.com/bao/161009/a/6/57f9b5e7151ad1a8468b45f1_250x290.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"/>
+        </view>
+        <view class="biqiang">
+        <image src="//s2.juancdn.com/bao/161009/c/d/57fa21bb151ad1ca148b4580_750x210.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"/>
+        </view>
+        <view class="huichang">
+            <view class="huileft">
+                <image src="//s2.juancdn.com/bao/161011/0/a/57fc8d70151ad1c4128b4597_375x456.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"/>
+            </view>
+            <view class="huiright">
+                <image src="//s2.juancdn.com/bao/161011/7/9/57fc4151151ad18c238b45bf_375x228.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"/>
+                <image src="//s2.juancdn.com/bao/161012/8/2/57fdadda151ad144548b458b_375x228.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"/>
+            </view>
+        </view>
+        <view class="huichang">
+            <view class="huileft">
+            <image src="{{huileftimg}}"></image>
+            </view>
+            <view class="huiright">
+            <image src="{{huirtimg}}"></image>
+            <image src="{{huirbimg}}"></image>
+            </view>
+        </view>
+        <view class="huichang">
+            <view class="huileft">
+                <image src="//s2.juancdn.com/bao/161011/0/a/57fc8d70151ad1c4128b4597_375x456.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"/>
+            </view>
+            <view class="huiright">
+                <image src="//s2.juancdn.com/bao/161011/7/9/57fc4151151ad18c238b45bf_375x228.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"/>
+                <image src="//s2.juancdn.com/bao/161012/8/2/57fdadda151ad144548b458b_375x228.jpg?iopcmd=convert&amp;Q=88&amp;dst=jpg"/>
+            </view>
+        </view>
+        <view class="prolist">
+            <ul>
+                <navigator url="../detail/detail?id={{item.id}}"  wx:for="{{prolist}}" wx:for-item="proitem">
+                  <li>
+                    <image src="{{proitem.src}}" mode="aspectFill"/>
+                    <view class="protext">
+                        <i>{{proitem.manjian}}</i>
+                        <span>{{proitem.protype}}</span>
+                    </view>
+                    <b>{{proitem.zhuanchang}}</b>
+                  </li>
+                </navigator>
+            </ul>
+        </view>
+        <view hidden="{{loadmoreHidden}}">
+          <button plain="true" loading="true">努力加载中...</button>
+        </view>
+    </scroll-view>
+    <!--</view>-->
+</view>

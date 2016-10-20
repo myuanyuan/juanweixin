@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/juanpi/new/new",
+    "pages/juanpi/my/my",
+    "pages/juanpi/ladys/ladys"
+  ],
+   "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "pink", 
+    "navigationBarTitleText": "卷皮",
+    "navigationBarTextStyle":"white",
+    "navigationBarTextFontSize":"30px"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "pink",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/juanpi/new/new",
+        "text": "今日折扣",
+        "iconPath": "images/barh1.png",
+        "selectedIconPath": "images/bars1.png"
+      },
+      {
+        "pagePath": "pages/juanpi/search/search",
+        "text": "居家馆",
+        "iconPath": "images/barh2.png",
+        "selectedIconPath": "images/bars2.png"
+      },
+      {
+        "pagePath": "pages/juanpi/photo/photo",
+        "iconPath": "images/barh3.png",
+        "selectedIconPath": "images/bars3.png",
+        "text": "全球购"
+      },
+      {
+        "pagePath": "pages/juanpi/my/my",
+        "iconPath": "images/barh4.png",
+        "selectedIconPath": "images/bars4.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/juanpi/my/my",
+        "iconPath": "images/barh5.png",
+        "selectedIconPath": "images/bars5.png",
+        "text": "我的卷皮"
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,20 @@
+<template name="modal">
+    <modal title="标题" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" bindconfirm="modalChange" bindcancel="modalChange">
+        <view class="section">
+            <lable for="username">用户名：
+                <input class="username" type="text"/>
+            </lable>
+            <lable for="password">密码：
+                <input class="password" type="text"/>
+            </lable>
+        </view>
+    </modal>
+    <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2">
+        <view> 内容可以插入节点 </view>
+    </modal>
+
+    <view class="btn-area">
+        <button type="default" bindtap="modalTap">账户余额</button>
+        <button type="default" bindtap="modalTap2">去购物车</button>
+    </view>
+</template>

@@ -1,0 +1,15 @@
+.d-container {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;}
+  .d-container .title {
+    box-sizing: border-box;
+    padding: 10px 0;
+    font-size: 18px; }
+  .d-container image {
+    width: 100%;
+    margin: 10px 0; }
+  .d-container text {
+    font-size: 12px; }
